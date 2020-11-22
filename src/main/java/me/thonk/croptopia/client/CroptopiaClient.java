@@ -23,10 +23,6 @@ public class CroptopiaClient implements ClientModInitializer {
     }
 
     public void registerCropBlockLayer(Block block) {
-        if (block instanceof LeafCropBlock) {
-            BlockRenderLayerMap.INSTANCE.putBlock(block, RenderLayer.getCutoutMipped());
-            return;
-        }
         BlockRenderLayerMap.INSTANCE.putBlock(block, RenderLayer.getCutoutMipped());
     }
 
